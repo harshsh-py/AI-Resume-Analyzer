@@ -1,31 +1,43 @@
 # AI-Powered Resume Analyzer
 
-**What it does**
-- Parse resumes (PDF/TXT), compute keyword coverage and semantic similarity to a job/role, rank candidates, and suggest improvements.
-- Includes a lightweight chatbot pane with practical tips for Data Science resumes.
+Upload resumes (PDF/TXT), compare them to a role/JD, get a ranked score, and generate concrete improvement tips.
 
-**Tech**
-- Python, Streamlit
-- sentence-transformers (embeddings), TF‑IDF (semantic overlap)
-- NLTK, spaCy (optional), PyPDF2
+**Live demo:**  
+**Repo:** https://github.com/harshsh-py/ai-resume-analyzer
 
-**Run locally**
+---
+
+## What it does
+- Parses resumes → clean text and sections
+- Scores fit using:
+  - **Semantic similarity** (HuggingFace `all-MiniLM-L6-v2` + TF-IDF)
+  - **Keyword coverage** (must-have / nice-to-have)
+- Ranks candidates and explains the score
+- “How to improve” suggestions
+- Multi-role comparison (e.g., Data Scientist, ML Engineer, Data Analyst)
+
+## UI
+- Tabs: **Upload & Ranking**, **Resume Feedback**, **About**, **Multi-Role Comparison**
+- Progress bars/metrics for scores
+- CSV download of ranked results
+
+## Tech
+- Streamlit, Python 3.11
+- sentence-transformers, scikit-learn
+- NLTK, spaCy (optional)
+- PyPDF2 / pdfminer.six
+- Pandas, NumPy
+
+## Run locally
 ```bash
+# in repo root
 python -m venv .venv
-# activate venv (Windows)
-.venv\Scripts\activate
-# or (macOS/Linux)
-source .venv/bin/activate
+# PowerShell
+.\.venv\Scripts\Activate.ps1
+# or Git Bash
+source .venv/Scripts/activate
 
 pip install -r requirements.txt
 python setup_nlp.py
-# optional spaCy model
-python -m spacy download en_core_web_sm
-
-streamlit run app.py
-```
-
-**Notes**
-- First run will download `all-MiniLM-L6-v2` from HuggingFace.
-- Adjust scoring weights in the sidebar.
-- Add more roles by dropping YAML files into `data/role_profiles/`.
+python -m spacy download en_core_web_sm  # optional
+python -m streamlit run app.py
