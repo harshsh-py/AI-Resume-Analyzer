@@ -2,7 +2,7 @@
 
 Upload resumes (PDF/TXT), compare them to a role/JD, get a ranked score, and generate concrete improvement tips.
 
-**Live demo:**  
+**Live demo:** https://ai-resume-analyzer-harshsh-py.streamlit.app/ 
 **Repo:** https://github.com/harshsh-py/ai-resume-analyzer
 
 ---
