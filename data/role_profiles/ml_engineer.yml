@@ -1,0 +1,29 @@
+name: "Machine Learning Engineer"
+description: "Designs, builds, and deploys machine learning models into production environments."
+keywords:
+  must_have:
+    - python
+    - machine learning
+    - deep learning
+    - data pipelines
+    - model deployment
+    - cloud
+    - mlops
+    - version control
+    - docker
+    - kubernetes
+  nice_to_have:
+    - pytorch
+    - tensorflow
+    - nlp
+    - computer vision
+    - time series
+    - feature engineering
+    - ci/cd
+    - aws
+    - gcp
+    - azure
+weights:
+  keyword_must: 0.45
+  keyword_nice: 0.15
+  embeddings: 0.40

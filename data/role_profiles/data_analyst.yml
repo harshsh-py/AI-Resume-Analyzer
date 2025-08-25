@@ -1,0 +1,27 @@
+name: "Data Analyst"
+description: "Analyzes datasets, builds reports, and communicates insights for decision-making."
+keywords:
+  must_have:
+    - sql
+    - excel
+    - data visualization
+    - dashboards
+    - reporting
+    - python
+    - statistics
+    - business analysis
+  nice_to_have:
+    - power bi
+    - tableau
+    - pandas
+    - numpy
+    - data cleaning
+    - data wrangling
+    - google data studio
+    - r
+    - data storytelling
+weights:
+  keyword_must: 0.45
+  keyword_nice: 0.15
+  embeddings: 0.40
+

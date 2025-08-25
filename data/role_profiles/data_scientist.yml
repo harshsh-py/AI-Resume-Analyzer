@@ -1,0 +1,30 @@
+name: "Data Scientist"
+description: "Builds models, analyzes data, and communicates insights to drive decisions."
+keywords:
+  must_have:
+    - python
+    - sql
+    - machine learning
+    - statistics
+    - pandas
+    - numpy
+    - scikit-learn
+    - data visualization
+    - feature engineering
+    - model evaluation
+  nice_to_have:
+    - deep learning
+    - pytorch
+    - tensorflow
+    - nlp
+    - time series
+    - mlops
+    - data pipelines
+    - cloud
+    - aws
+    - gcp
+    - azure
+weights:
+  keyword_must: 0.45
+  keyword_nice: 0.15
+  embeddings: 0.40

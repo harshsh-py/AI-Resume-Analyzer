@@ -1,0 +1,29 @@
+name: "Software Developer"
+description: "Designs, builds, tests, and maintains software applications using programming best practices."
+keywords:
+  must_have:
+    - programming
+    - data structures
+    - algorithms
+    - object oriented programming
+    - git
+    - debugging
+    - problem solving
+    - version control
+    - testing
+    - software design
+  nice_to_have:
+    - java
+    - python
+    - javascript
+    - databases
+    - sql
+    - agile
+    - devops
+    - cloud
+    - docker
+    - rest api
+weights:
+  keyword_must: 0.45
+  keyword_nice: 0.15
+  embeddings: 0.40
